@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainForm.cs](./CS/ControlRowSourceSample/MainForm.cs) (VB: [MainForm.vb](./VB/ControlRowSourceSample/MainForm.vb))**
+* [Data.cs](./CS/ControlRowSourceSample/Model/Data.cs) (VB: [Data.vb](./VB/ControlRowSourceSample/Model/Data.vb))
+<!-- default file list end -->
 # How to: visualize data rows that a data grid contains using a chart
 
 
