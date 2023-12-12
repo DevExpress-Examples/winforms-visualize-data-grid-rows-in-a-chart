@@ -1,5 +1,7 @@
-﻿Namespace ControlRowSourceSample
-    Partial Public Class MainForm
+Namespace ControlRowSourceSample
+
+    Partial Class MainForm
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,21 +12,21 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim chartTitle1 As New DevExpress.XtraCharts.ChartTitle()
+            Dim chartTitle1 As DevExpress.XtraCharts.ChartTitle = New DevExpress.XtraCharts.ChartTitle()
             Me.gridControl = New DevExpress.XtraGrid.GridControl()
             Me.pLinqServerModeSource = New DevExpress.Data.PLinq.PLinqServerModeSource()
             Me.mainView = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -41,10 +43,10 @@
             Me.splitterControl1 = New DevExpress.XtraEditors.SplitterControl()
             Me.defaultLookAndFeel = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
             Me.chartControl = New DevExpress.XtraCharts.ChartControl()
-            CType(Me.gridControl, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.pLinqServerModeSource, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.mainView, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.chartControl, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.gridControl), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.pLinqServerModeSource), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.mainView), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.chartControl), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' gridControl
@@ -56,7 +58,7 @@
             Me.gridControl.Name = "gridControl"
             Me.gridControl.Size = New System.Drawing.Size(766, 688)
             Me.gridControl.TabIndex = 0
-            Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.mainView})
+            Me.gridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.mainView})
             ' 
             ' pLinqServerModeSource
             ' 
@@ -64,18 +66,14 @@
             ' 
             ' mainView
             ' 
-            Me.mainView.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() { Me.colState, Me.colProduct, Me.colCategory, Me.colUnitsSold, Me.colPrice, Me.colRevenue, Me.colUnitsSoldTarget, Me.colRevenueTarget, Me.colSalesDynamic, Me.colReportDate})
+            Me.mainView.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colState, Me.colProduct, Me.colCategory, Me.colUnitsSold, Me.colPrice, Me.colRevenue, Me.colUnitsSoldTarget, Me.colRevenueTarget, Me.colSalesDynamic, Me.colReportDate})
             Me.mainView.GridControl = Me.gridControl
             Me.mainView.GroupCount = 2
             Me.mainView.Name = "mainView"
             Me.mainView.OptionsBehavior.Editable = False
             Me.mainView.OptionsSelection.MultiSelect = True
-            Me.mainView.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() { _
-                New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colState, DevExpress.Data.ColumnSortOrder.Ascending), _
-                New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colCategory, DevExpress.Data.ColumnSortOrder.Ascending), _
-                New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colProduct, DevExpress.Data.ColumnSortOrder.Ascending), _
-                New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colReportDate, DevExpress.Data.ColumnSortOrder.Ascending) _
-            })
+            Me.mainView.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colState, DevExpress.Data.ColumnSortOrder.Ascending), New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colCategory, DevExpress.Data.ColumnSortOrder.Ascending), New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colProduct, DevExpress.Data.ColumnSortOrder.Ascending), New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colReportDate, DevExpress.Data.ColumnSortOrder.Ascending)})
+            AddHandler Me.mainView.RowCellStyle, New DevExpress.XtraGrid.Views.Grid.RowCellStyleEventHandler(AddressOf Me.OnGridViewRowCellStyle)
             ' 
             ' colState
             ' 
@@ -137,7 +135,7 @@
             ' 
             Me.colSalesDynamic.FieldName = "SalesDynamic"
             Me.colSalesDynamic.Name = "colSalesDynamic"
-            Me.colSalesDynamic.OptionsColumn.ReadOnly = True
+            Me.colSalesDynamic.OptionsColumn.[ReadOnly] = True
             Me.colSalesDynamic.Visible = True
             Me.colSalesDynamic.VisibleIndex = 6
             ' 
@@ -168,11 +166,11 @@
             Me.chartControl.Legend.Name = "Default Legend"
             Me.chartControl.Location = New System.Drawing.Point(778, 0)
             Me.chartControl.Name = "chartControl"
-            Me.chartControl.SeriesSerializable = New DevExpress.XtraCharts.Series(){}
+            Me.chartControl.SeriesSerializable = New DevExpress.XtraCharts.Series(-1) {}
             Me.chartControl.Size = New System.Drawing.Size(500, 688)
             Me.chartControl.TabIndex = 2
             chartTitle1.Text = "Total Revenue"
-            Me.chartControl.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() { chartTitle1})
+            Me.chartControl.Titles.AddRange(New DevExpress.XtraCharts.ChartTitle() {chartTitle1})
             ' 
             ' MainForm
             ' 
@@ -184,32 +182,45 @@
             Me.Controls.Add(Me.chartControl)
             Me.Name = "MainForm"
             Me.Text = "ControlRowSource Sample"
-            CType(Me.gridControl, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.pLinqServerModeSource, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.mainView, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.chartControl, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.gridControl), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.pLinqServerModeSource), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.mainView), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.chartControl), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+#End Region
         Private gridControl As DevExpress.XtraGrid.GridControl
-        Private WithEvents mainView As DevExpress.XtraGrid.Views.Grid.GridView
+
+        Private mainView As DevExpress.XtraGrid.Views.Grid.GridView
+
         Private splitterControl1 As DevExpress.XtraEditors.SplitterControl
+
         Private defaultLookAndFeel As DevExpress.LookAndFeel.DefaultLookAndFeel
+
         Private pLinqServerModeSource As DevExpress.Data.PLinq.PLinqServerModeSource
+
         Private colState As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colProduct As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colCategory As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colUnitsSold As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colPrice As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colRevenue As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colUnitsSoldTarget As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colRevenueTarget As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colSalesDynamic As DevExpress.XtraGrid.Columns.GridColumn
+
         Private colReportDate As DevExpress.XtraGrid.Columns.GridColumn
+
         Private chartControl As DevExpress.XtraCharts.ChartControl
     End Class
 End Namespace
-
