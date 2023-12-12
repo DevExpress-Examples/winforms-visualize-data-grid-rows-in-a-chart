@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WinForms - Visualize A Data Grid Rows in a Chart
+# WinForms - Visualize a Data Grid Rows in a Chart
 
 This example demonstrates how to connect a Chart control and a Data Grid to visualize the grid's data rows.
 Assign a new instance of [ControlRowSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Controls.ControlRowSource) to the chart's `DataSource` property to use the Data Grid rows as the Chart's data source.
