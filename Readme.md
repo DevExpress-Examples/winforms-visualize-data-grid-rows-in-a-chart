@@ -3,22 +3,17 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T554382)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* **[MainForm.cs](./CS/ControlRowSourceSample/MainForm.cs) (VB: [MainForm.vb](./VB/ControlRowSourceSample/MainForm.vb))**
+# WinForms - Visualize A Data Grid Rows in a Chart
+
+This example demonstrates how to connect a Chart control and a Data Grid to visualize the grid's data rows.
+Assign a new instance of [ControlRowSource](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Controls.ControlRowSource) to the chart's `DataSource` property to use the Data Grid rows as the Chart's data source.
+
+## Files to Review
+
+* [MainForm.cs](./CS/ControlRowSourceSample/MainForm.cs) (VB: [MainForm.vb](./VB/ControlRowSourceSample/MainForm.vb))
 * [Data.cs](./CS/ControlRowSourceSample/Model/Data.cs) (VB: [Data.vb](./VB/ControlRowSourceSample/Model/Data.vb))
-<!-- default file list end -->
-# How to: visualize data rows that a data grid contains using a chart
 
+## Documentation
 
-This example demonstrates how to connect a chart control and a data grid to visualize the grid's data rows.
-
-
-<h3>Description</h3>
-
-Use the&nbsp;<strong>ControlRowSource</strong> component to provide data rows of the Data Grid's view as the chart's data source.
-
-<br/>
-
-
+* [Integrate the WinForms Chart with a Data Grid, Vertical Grid, Tree List or List Box](https://docs.devexpress.com/WindowsForms/119224/controls-and-libraries/chart-control/provide-data/integration-with-a-data-grid-vertical-grid-tree-list-or-list-box-via-controlrowsource)
