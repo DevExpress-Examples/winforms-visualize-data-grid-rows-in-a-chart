@@ -19,7 +19,7 @@ Assign a new instance of [ControlRowSource](https://docs.devexpress.com/CoreLibr
 
 * [Integrate the WinForms Chart with a Data Grid, Vertical Grid, Tree List or List Box](https://docs.devexpress.com/WindowsForms/119224/controls-and-libraries/chart-control/provide-data/integration-with-a-data-grid-vertical-grid-tree-list-or-list-box-via-controlrowsource)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-visualize-data-grid-rows-in-a-chart&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-visualize-data-grid-rows-in-a-chart&~~~was_helpful=no)
 
